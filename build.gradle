@@ -1,0 +1,44 @@
+group 'org.nla'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:19.0-rc2'
+    compile 'com.google.maps:google-maps-services:0.1.4'
+    compile 'org.freemarker:freemarker:2.3.21'
+    compile 'org.twitter4j:twitter4j-core:4.0.4'
+
+    testCompile 'junit:junit:4.11'
+}
+
+test {
+    systemProperties 'property': 'value'
+    finalizedBy jacocoTestReport
+}
+
+jacoco {
+    toolVersion = "0.7.1.201405082137"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "${buildDir}/jacocoHtml"
+    }
+}
+
+uploadArchives {
+    repositories {
+        flatDir {
+            dirs 'repos'
+        }
+    }
+}
