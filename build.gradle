@@ -15,10 +15,14 @@ dependencies {
     compile 'org.twitter4j:twitter4j-core:4.0.4'
     compile 'org.elasticsearch:elasticsearch:1.4.0'
     compile 'org.json:json:20141113'
-    compile 'com.google.code.gsonv:gson:2.2.4'
+    compile 'com.google.code.gson:gson:2.+'
+    compile 'com.opencsv:opencsv:3.+'
+    compile files('libs/jaunt1.1.0.1.jar')
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.assertj:assertj-core:3.2.0'
+    testCompile 'org.mockito:mockito-all:1.8.+'
+
 }
 
 test {

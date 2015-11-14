@@ -1,8 +1,5 @@
 package org.nla.elasticsearch;
 
-//import static org.junit.Assert.*;
-//import static org.hamcrest.CoreMatchers.*;
-
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;

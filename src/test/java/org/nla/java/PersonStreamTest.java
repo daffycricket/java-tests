@@ -2,7 +2,7 @@ package org.nla.java;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.nla.Person;
+import org.nla.model.Person;
 
 import java.time.LocalDate;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package org.nla;
+package org.nla.model;
 
 import java.time.LocalDate;
 import java.time.Period;

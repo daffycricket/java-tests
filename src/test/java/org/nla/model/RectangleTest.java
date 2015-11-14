@@ -1,4 +1,4 @@
-package org.nla;
+package org.nla.model;
 
 import org.junit.Assert;
 import org.junit.Test;

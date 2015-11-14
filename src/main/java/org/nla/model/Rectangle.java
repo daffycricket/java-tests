@@ -1,4 +1,4 @@
-package org.nla;
+package org.nla.model;
 
 public class Rectangle {
     private final int width;
