@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.time.LocalDate;
 
 import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class PersonTest {
 
@@ -14,7 +14,7 @@ public class PersonTest {
 
     @Before
     public void setup() {
-        person = new Person("Nicolas", LocalDate.of(1983, 1, 17));
+        person = new Person("Nicolas", LocalDate.of(1983, 1, 17), Person.Gender.male);
     }
 
     @Test

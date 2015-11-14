@@ -3,15 +3,27 @@ package org.nla;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Person {
+public class Person implements Comparable<Person> {
+
+    public enum Gender {
+        male,
+        female
+    }
 
     private String firstName;
 
     private LocalDate birthDate;
 
-    public Person(String firstName, LocalDate birthDate) {
+    private Gender gender;
+
+    public Person(String firstName, LocalDate birthDate, Gender gender) {
         this.firstName = firstName;
         this.birthDate = birthDate;
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 
     public String getFirstName() {
@@ -28,10 +40,16 @@ public class Person {
     }
 
     @Override
+    public int compareTo(Person p) {
+        return Integer.compare(p.getAge(LocalDate.now()), getAge(LocalDate.now()));
+    }
+
+    @Override
     public String toString() {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", birthDate=" + birthDate +
+                ", gender=" + gender +
                 '}';
     }
 }

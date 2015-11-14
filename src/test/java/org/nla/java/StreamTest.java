@@ -1,13 +1,8 @@
 package org.nla.java;
 
-import com.google.maps.internal.StringJoin;
-import org.junit.Before;
 import org.junit.Test;
-import org.nla.Person;
 
-import java.time.LocalDate;
 import java.util.Arrays;
-import java.util.StringJoiner;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -148,5 +143,4 @@ public class StreamTest {
                 .range(1, 10)
                 .forEach(System.out::println);
     }
-
 }
