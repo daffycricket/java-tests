@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <person>
-    <first-name>Bob</first-name>
-    <last-name>Mauranne</last-name>
+    <firstName>Bob</firstName>
+    <lastName>Mauranne</lastName>
     <location>Paris</location>
     <skills>
         <skill>Weaponry</skill>

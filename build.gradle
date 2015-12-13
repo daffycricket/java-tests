@@ -22,12 +22,12 @@ dependencies {
     compile 'com.opencsv:opencsv:3.+'
     compile 'org.tmatesoft.svnkit:svnkit:1.8+'
     compile files('libs/jaunt1.1.0.1.jar')
+    compile 'commons-io:commons-io:2+'
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.assertj:assertj-core:3.2.0'
     testCompile 'org.mockito:mockito-all:1.8.+'
     testCompile 'org.assertj:assertj-core:3.2.0'
-
 }
 
 test {
