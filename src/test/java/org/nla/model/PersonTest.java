@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import java.time.LocalDate;
 
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 public class PersonTest {
 
@@ -19,22 +18,22 @@ public class PersonTest {
 
     @Test
     public void testGetFirstName() throws Exception {
-        assertThat(person.getFirstName(), equalTo("Nicolas"));
+        assertThat(person.getFirstName()).isEqualTo("Nicolas");
     }
 
     @Test
     public void testGetBirthDate() throws Exception {
-        assertThat(person.getBirthDate(), equalTo(LocalDate.of(1983, 1, 17)));
+        assertThat(person.getBirthDate()).isEqualTo(LocalDate.of(1983, 1, 17));
     }
 
     @Test
     public void testGetAge() throws Exception {
         LocalDate now = LocalDate.of(2015, 1, 18);
-        assertThat(person.getAge(now), equalTo(32));
+        assertThat(person.getAge(now)).isEqualTo(32);
     }
 
     @Test
     public void testToString() throws Exception {
-        assertThat(person.toString(), equalTo("Person{firstName='Nicolas', birthDate=1983-01-17}"));
+        assertThat(person.toString()).isEqualTo("Person{firstName='Nicolas', birthDate=1983-01-17, gender=male}");
     }
 }

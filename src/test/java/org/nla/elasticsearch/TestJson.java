@@ -42,9 +42,8 @@ public class TestJson {
     @Test
     public void testTransformXmlToJson() {
         String output = null;
-        String filePath = "files\\person1.xml";
         try {
-            Document xmlDocument = this.documentBuilder.parse(new File(filePath));
+            Document xmlDocument = this.documentBuilder.parse(new File(getClass().getClassLoader().getResource("person1.xml").getFile()));
             String xmlString = this.convertDocumentToXmlString(xmlDocument);
 
             JSONObject xmlJSONObj = XML.toJSONObject(xmlString);

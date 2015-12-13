@@ -3,6 +3,7 @@ package org.nla.jaunt;
 import com.jaunt.*;
 import com.jaunt.component.Form;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class JauntTest {
     }
 
     @Test
+    @Ignore //JAUNT HAS EXPIRED! [http://jaunt-api.com]
     public void test() throws ResponseException, JauntException {
         UserAgent userAgent = new UserAgent();
         userAgent.visit("http://www.livraison.simplymarket.fr/index.php");
@@ -34,7 +36,7 @@ public class JauntTest {
 
         authForm = userAgent.doc.getForm(0);
         authForm.setTextField("CLI_FACEMAIL_LOG", "daffycricket@yahoo.fr");
-        authForm.setPassword("CLI_PASSWORD_LOG", "c@rybou1");
+        authForm.setPassword("CLI_PASSWORD_LOG", "bob");
         authForm.submit("OK");
         System.out.println(userAgent.getLocation());
         // document / blocHaut / menu / diaContainer / diaListing + group
@@ -55,6 +57,6 @@ public class JauntTest {
         // System.out.println("search results:\n" + elements.innerHTML());
 
         // location (url)
-        fail("Not yet implemented");
+        fail("No real test...");
     }
 }

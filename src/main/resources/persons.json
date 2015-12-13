@@ -1,0 +1,28 @@
+{
+  "persons": {
+    "person": [
+      {
+        "firstName": "Bob",
+        "lastName": "Mauranne",
+        "location": "Paris",
+        "skills": {
+          "skill": [
+            "Weaponry",
+            "Planes"
+          ]
+        }
+      },
+      {
+        "firstName": "Helen",
+        "lastName": "Ripley",
+        "location": "LV426",
+        "skills": {
+          "skill": [
+            "Weaponry",
+            "Spacecrafts"
+          ]
+        }
+      }
+    ]
+  }
+}

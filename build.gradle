@@ -4,6 +4,9 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'jacoco'
 
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
 repositories {
     mavenCentral()
 }
@@ -23,6 +26,7 @@ dependencies {
     testCompile 'junit:junit:4.11'
     testCompile 'org.assertj:assertj-core:3.2.0'
     testCompile 'org.mockito:mockito-all:1.8.+'
+    testCompile 'org.assertj:assertj-core:3.2.0'
 
 }
 

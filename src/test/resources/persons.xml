@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons>
+    <person>
+        <firstName>Bob</firstName>
+        <lastName>Mauranne</lastName>
+        <location>Paris</location>
+        <skills>
+            <skill>Weaponry</skill>
+            <skill>Planes</skill>
+        </skills>
+    </person>
+    <person>
+        <firstName>Helen</firstName>
+        <lastName>Ripley</lastName>
+        <location>LV426</location>
+        <skills>
+            <skill>Weaponry</skill>
+            <skill>Spacecrafts</skill>
+        </skills>
+    </person>
+</persons>
